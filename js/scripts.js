@@ -68,6 +68,23 @@ function scrollTestimonials(direction) {
   }
 }
 
+//FAQ JS
+document.querySelectorAll('.faq-question').forEach(question => {
+  question.addEventListener('click', () => {
+    const faqItem = question.parentElement;
+
+    // Tutup semua item lainnya
+    document.querySelectorAll('.faq-item').forEach(item => {
+      if (item !== faqItem) {
+        item.classList.remove('active');
+      }
+    });
+
+    // Toggle item yang diklik
+    faqItem.classList.toggle('active');
+  });
+});
+
   // Fungsi untuk menangani scroll dan memberikan efek pada halaman
   function handleScroll() {
     const header = document.querySelector('.hero-section');
