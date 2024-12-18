@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SamMarie Clinic</title>
+  <!-- Favicon -->
+  <link rel="icon" href="assets/images/favicon.png" type="image/png">
+
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+  
+  
+  <!-- Bootstrap CSS -->
+  <link
+    href="css/bootstrap.min.css"
+    rel="stylesheet"
+  />
+  
+  <!-- Font Awesome CDN -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+  />
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <!-- Scroll Up Button -->
+<a href="#" class="scroll-up" id="scrollUp">
+  <i class="fas fa-arrow-up"></i>
+</a>
+
+  <!-- Header Section -->
+  <header class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+      <!-- Logo Klinik -->
+      <a class="navbar-brand" href="index.html">
+        <img src="assets/images/smc-logo.png" alt="SamMarie Clinic" class="logo">
+      </a>
+      
+      <!-- Tombol untuk navigasi responsif -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+  
+      <!-- Menu Navigasi -->
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link menu-hover" href="#home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link menu-hover" href="#layanan-unggulan">Layanan Unggulan</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link menu-hover" href="jd.html">Jadwal Dokter</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link menu-hover" href="about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link menu-hover" href="#contact">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <!-- Slider Section -->
+  <section class="hero">
+    <div id="heroCarousel" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#heroCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#heroCarousel" data-slide-to="1"></li>
+        <li data-target="#heroCarousel" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+        <!-- Slide 1 -->
+        <div class="carousel-item active">
+          <img src="assets/images/treatment-kulit-smc.jpg" class="d-block w-100" alt="Slide 1">
+          <div class="carousel-caption d-none d-md-block">
+            <h2>Welcome to SamMarie Clinic</h2>
+            <p>Your health, our priority.</p>
+            <a href="#services" class="btn btn-primary">Explore Services</a>
+          </div>
+        </div>
+        <!-- Slide 2 -->
+        <div class="carousel-item">
+          <img src="assets/images/layanan anak.jpg" class="d-block w-100" alt="Slide 2">
+          <div class="carousel-caption d-none d-md-block">
+            <h2>Expert Doctors</h2>
+            <p>Get treated by specialists in every field.</p>
+          </div>
+        </div>
+        <!-- Slide 3 -->
+        <div class="carousel-item">
+          <img src="images/slide3.jpg" class="d-block w-100" alt="Slide 3">
+          <div class="carousel-caption d-none d-md-block">
+            <h2>Comprehensive Care</h2>
+            <p>Quality care for all your family needs.</p>
+          </div>
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#heroCarousel" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#heroCarousel" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+  </section>
+  
+  <!-- Layanan Unggulan Section -->
+  <section id="layanan-unggulan" class="container my-5">
+    <div class="text-center">
+      <h2 class="section-title">Layanan SamMarie Clinic</h2>
+      <p class="mb-4">Kami hadir untuk memenuhi kebutuhan kesehatan Anda.</p>
+    </div>
+    <div class="row">
+      <!-- Dokter Umum -->
+      <section id="dokter-umum"></section>
+      <div class="col-md-4">
+        <div class="service-box text-center p-4">
+          <i class="fas fa-user-md fa-5x text-purple"></i>
+          <h4 class="mt-3">Dokter Umum</h4>
+          <p>Konsultasi kesehatan dan pengobatan umum untuk segala usia.</p>
+          <a href="#dokter-umum" class="btn btn-primary">Pelajari Lebih Lanjut</a>
+        </div>
+      </div>
+      <!-- Spesialis Kulit & Kelamin -->
+      <div class="col-md-4">
+        <div class="service-box text-center p-4">
+          <i class="fas fa-briefcase-medical fa-5x text-purple"></i>
+          <h4 class="mt-3">Spesialis Kulit &amp; Kelamin</h4>
+          <p>Perawatan profesional dan konsultasi spesialis untuk masalah kulit dan kelamin.</p>
+          <a href="#kulit-kelamin" class="btn btn-primary">Pelajari Lebih Lanjut</a>
+        </div>
+      </div>
+      <!-- Spesialis Anak -->
+      <div class="col-md-4">
+        <div class="service-box text-center p-4">
+          <i class="fas fa-baby fa-5x text-purple"></i>
+          <h4 class="mt-3">Spesialis Anak</h4>
+          <p>Perawatan kesehatan dan konsultasi untuk anak-anak Anda.</p>
+          <a href="#spesialis-anak" class="btn btn-primary">Pelajari Lebih Lanjut</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Section Layanan dengan Penjelasan & Gambar -->
+<section class="container my-5">
+  <div class="text-center mb-4">
+    <!--nav
+    <h2>Layanan SamMarie Clinic</h2>
+    <p class="mb-4">Kami hadir untuk memenuhi kebutuhan kesehatan Anda.</p>
+  </div>
+  </-->
+  
+  <!-- Layanan 1 -->
+  <section id="dokter-umum"></section>
+  <div class="row align-items-center my-5 service-container">
+    <div class="col-md-6 service-content">
+      <h3 class="service-title">Dokter Umum</h3>
+      <p>
+        Layanan dokter umum kami meliputi pemeriksaan kesehatan, diagnosis, dan pengobatan untuk segala usia.
+      </p>
+      <ul class="service-points">
+        <li><a href="#pemeriksaan" class="service-link">Pemeriksaan kesehatan rutin</a></li>
+        <li>Diagnosis penyakit</li>
+        <li>Resep obat dan pengobatan</li>
+        <li>Konsultasi kesehatan keluarga</li>
+      </ul>
+    </div>
+    <div class="col-md-6 service-image">
+      <img src="assets/images/tes1.png" alt="Dokter Umum" class="img-fluid rounded shadow">
+    </div>
+  </div>
+  
+  <!-- Layanan 2 -->
+   <section id="kulit-kelamin"></section>
+  <div class="row align-items-center my-5 service-container">
+    <div class="col-md-6 service-content">
+      <h3 class="service-title">Spesialis Kulit &amp; Kelamin</h3>
+      <p>
+        Perawatan profesional dan konsultasi spesialis untuk masalah kulit dan kelamin.
+      </p>
+      <ul class="service-points">
+        <li><a href="#perawatan-kulit" class="service-link">Perawatan untuk jerawat dan bekas luka</a></li>
+        <li><a href="#penyakit-kelamin" class="service-link">Penanganan penyakit kelamin</a></li>
+        <li><a href="#infeksi-kulit" class="service-link">Konsultasi dan pengobatan infeksi kulit</a></li>
+        <li><a href="#kosmetik" class="service-link">Perawatan kosmetik medis</a></li>
+      </ul>
+    </div>
+    <div class="col-md-6 service-image">
+      <img src="assets/images/tes2.png" alt="Kulit & Kelamin" class="img-fluid rounded shadow">
+    </div>
+  </div>
+  
+  <!-- Layanan 3 -->
+  <section id="spesialis-anak"></section>
+  <div class="row align-items-center my-5 service-container">
+    <div class="col-md-6 service-content">
+      <h3 class="service-title">Spesialis Anak</h3>
+      <p>
+        Perawatan kesehatan dan konsultasi untuk anak-anak Anda.
+      </p>
+      <ul class="service-points">
+        <li><a href="#imunisasi" class="service-link">Imunisasi anak sesuai jadwal</a></li>
+        <li><a href="#pertumbuhan" class="service-link">Pemantauan tumbuh kembang anak</a></li>
+        <li><a href="#penyakit-anak" class="service-link">Penanganan penyakit umum pada anak</a></li>
+        <li><a href="#nutrisi" class="service-link">Konsultasi nutrisi dan diet anak</a></li>
+      </ul>
+    </div>
+    <div class="col-md-6 service-image">
+      <img src="assets/images/tes3.png" alt="Spesialis Anak" class="img-fluid rounded shadow">
+    </div>
+  </div>
+</section>
+
+<!-- Lokasi Klinik Section -->
+<section class="container my-5">
+  <div class="card-title text-start mb-4">
+    <h4>Lokasi SamMarie Clinic</h4>
+  </div>
+  <div class="row">
+    <!-- Klinik Basura -->
+    <div class="col-md-6 mb-4">
+      <div class="card">
+        <img src="assets/images/teslokasibasura.png" class="card-img-top" alt="Klinik Tebet">
+        <div class="card-body">
+          <h5 class="card-title">Klinik SamMarie Basura</h5>
+          <p class="card-text">
+            <i class="fas fa-map-marker-alt text-danger"></i>
+            Bassura City Tower F, Lt.GF No.CL-02, Cipinang Besar Sel., Jakarta Timur, Daerah Khusus Ibukota Jakarta 13410
+          </p>
+          <a href="#services" class="btn btn-primary">Kunjungi Lokasi</a>
+        </div>
+      </div>
+    </div>
+    <!-- Klinik Tebet -->
+    <div class="col-md-6 mb-4">
+      <div class="card"> <!-- ganti ini>> <div class="card shadow-sm"></div> kalau ingin mematikan shadow /-->
+        <img src="assets/images/teslokasitebet.png" class="card-img-top" alt="Klinik Basura">
+        <div class="card-body">
+          <h5 class="card-title">Klinik SamMarie Tebet</h5>
+          <p class="card-text">
+            <i class="fas fa-map-marker-alt text-danger"></i>
+            Jl. Tebet Barat Dalam VII No. 21, Kec. Tebet, Kota Jakarta Selatan,
+            Daerah Khusus Ibukota Jakarta 12810
+          </p>
+          <a href="#services" class="btn btn-primary">Kunjungi Lokasi</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Testimoni kita matika dahulu 
+<section class="testimonials-container">
+  <div class="text-center">
+  <h2 class="section-title">#MarieBercerita</h2>
+  </div>
+  <div class="testimonials-navigation">
+    <button class="scroll-button left" onclick="scrollTestimonials('left')">&#9664;</button>
+    <button class="scroll-button right" onclick="scrollTestimonials('right')">&#9654;</button>
+  </div>
+  <div class="testimonials-wrapper">
+    <div class="testimonial">
+      <img src="https://via.placeholder.com/80" alt="User" class="testimonial-photo">
+      <h4 class="testimonial-name">Maria Samantha</h4>
+      <p class="testimonial-content">&ldquo;Layanan yang sangat luar biasa! Dokter dan staf sangat ramah dan profesional.&rdquo;</p>
+      <div class="testimonial-rating">&#9733; &#9733; &#9733; &#9733; &#9733;</div>
+    </div>
+
+    <div class="testimonial">
+      <img src="https://via.placeholder.com/80" alt="User" class="testimonial-photo">
+      <h4 class="testimonial-name">John Smith</h4>
+      <p class="testimonial-content">&ldquo;Pengalaman yang sangat memuaskan, pasti akan kembali lagi!&rdquo;</p>
+      <div class="testimonial-rating">&#9733; &#9733; &#9733; &#9733; &#9734;</div>
+    </div>
+
+    <div class="testimonial">
+      <img src="https://via.placeholder.com/80" alt="User" class="testimonial-photo">
+      <h4 class="testimonial-name">Lisa Brown</h4>
+      <p class="testimonial-content">&ldquo;Proses sangat cepat dan efisien. Tempatnya bersih dan nyaman.&rdquo;</p>
+      <div class="testimonial-rating">&#9733; &#9733; &#9733; &#9733; &#9733;</div>
+    </div>
+
+    <div class="testimonial">
+      <img src="https://via.placeholder.com/80" alt="User" class="testimonial-photo">
+      <h4 class="testimonial-name">Alex Johnson</h4>
+      <p class="testimonial-content">&ldquo;Sangat merekomendasikan klinik ini untuk siapa saja yang butuh layanan kesehatan terbaik.&rdquo;</p>
+      <div class="testimonial-rating">&#9733; &#9733; &#9733; &#9733; &#9734;</div>
+    </div>
+
+    <div class="testimonial">
+      <img src="https://via.placeholder.com/80" alt="User" class="testimonial-photo">
+      <h4 class="testimonial-name">Sophia Lee</h4>
+      <p class="testimonial-content">&ldquo;Pelayanan yang ramah dan sangat membantu. Terima kasih banyak!&rdquo;</p>
+      <div class="testimonial-rating">&#9733; &#9733; &#9733; &#9733; &#9733;</div>
+    </div>
+
+    <div class="testimonial">
+      <img src="https://via.placeholder.com/80" alt="User" class="testimonial-photo">
+      <h4 class="testimonial-name">Emily Davis</h4>
+      <p class="testimonial-content">&ldquo;Dokternya sangat sabar dan memberikan penjelasan yang rinci.&rdquo;</p>
+      <div class="testimonial-rating">&#9733; &#9733; &#9733; &#9733; &#9733;</div>
+    </div>
+
+    <div class="testimonial">
+      <img src="https://via.placeholder.com/80" alt="User" class="testimonial-photo">
+      <h4 class="testimonial-name">Michael Chen</h4>
+      <p class="testimonial-content">&ldquo;Harga terjangkau dengan layanan yang sangat baik.&rdquo;</p>
+      <div class="testimonial-rating">&#9733; &#9733; &#9733; &#9733; &#9733;</div>
+    </div>
+
+    <div class="testimonial">
+      <img src="https://via.placeholder.com/80" alt="User" class="testimonial-photo">
+      <h4 class="testimonial-name">Olivia Martin</h4>
+      <p class="testimonial-content">&ldquo;Pasti akan merekomendasikan tempat ini ke teman-teman saya!&rdquo;</p>
+      <div class="testimonial-rating">&#9733; &#9733; &#9733; &#9733; &#9733;</div>
+    </div>
+
+    <div class="testimonial">
+      <img src="https://via.placeholder.com/80" alt="User" class="testimonial-photo">
+      <h4 class="testimonial-name">Daniel Wilson</h4>
+      <p class="testimonial-content">&ldquo;Pelayanan yang cepat dan efisien, sangat memuaskan.&rdquo;</p>
+      <div class="testimonial-rating">&#9733; &#9733; &#9733; &#9733; &#9734;</div>
+    </div>
+
+    <div class="testimonial">
+      <img src="https://via.placeholder.com/80" alt="User" class="testimonial-photo">
+      <h4 class="testimonial-name">Sarah Thomas</h4>
+      <p class="testimonial-content">&ldquo;Stafnya sangat perhatian dan responsif terhadap kebutuhan pasien.&rdquo;</p>
+      <div class="testimonial-rating">&#9733; &#9733; &#9733; &#9733; &#9733;</div>
+    </div>
+  </div>
+</section>
+/-->
+
+  <!-- Footer Section -->
+  <footer class="bg-dark text-white py-3 text-center">
+    <p>&copy; 2024 SamMarie Clinic | All Rights Reserved</p>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/jquery-3.4.1.slim.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/scripts.js"></script>
+</body>
+</html>

@@ -1,0 +1,290 @@
+/* Variabel untuk warna utama */
+:root {
+    --primary-color: #91298d;
+    --hover-color: #c03192;
+    --secondary-color: #575757;
+    --background-color: #fdfdfd;
+    --overlay-background: rgba(0, 0, 0, 0.515);
+}
+
+/* Atur warna utama untuk tema SamMarie Clinic */
+.text-purple {
+    color: var(--primary-color);
+}
+
+/* Animasi sederhana dengan efek fadeIn */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Bagian Header */
+.logo {
+    height: 70px;
+}
+
+.navbar {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.nav-link {
+    color: var(--primary-color);
+    font-weight: bold;
+    transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.nav-link:hover {
+    color: var(--hover-color);
+    transform: scale(1.1);
+}
+
+/* Responsif */
+@media (max-width: 768px) {
+    .navbar-brand img {
+        height: 40px;
+    }
+
+    .nav-link {
+        font-size: 14px;
+    }
+}
+
+/* Override warna default navigasi */
+.navbar-light .navbar-nav .nav-link {
+    color: var(--secondary-color) !important;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+    color: var(--hover-color) !important;
+}
+
+/* Style untuk Scroll-Up Button */
+.scroll-up {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: transparent;
+    color: var(--hover-color);
+    font-size: 30px;
+    cursor: pointer;
+    border: none;
+    transition: color 0.3s;
+}
+
+.scroll-up:hover {
+    color: var(--primary-color);
+    transform: translateY(-3px);
+}
+
+/* Hero Slider */
+.hero {
+    position: relative;
+    overflow: hidden;
+}
+
+.carousel-item img {
+    height: 90vh;
+    object-fit: cover;
+}
+
+.carousel-caption {
+    background: rgba(174, 28, 188, 0.452);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.carousel-caption h2,
+.carousel-caption p {
+    color: #fff;
+}
+
+.carousel-caption h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.carousel-caption p {
+    font-size: 1.2rem;
+}
+
+/* Button Primary */
+.btn-primary {
+    background-color: var(--primary-color);
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+}
+
+.btn-primary:hover {
+    background-color: var(--hover-color);
+    color: #fff;
+}
+
+/* Overlay Slider */
+.carousel-item::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, var(--overlay-background), rgba(0, 0, 0, 0.1));
+    z-index: 1;
+}
+
+.carousel-item img {
+    position: relative;
+    z-index: 0;
+}
+
+.carousel-item {
+    transition: transform 1s ease-in-out, opacity 1s ease-in-out;
+}
+
+/* Layanan Unggulan */
+.service-box {
+    border: 2px solid var(--primary-color);
+    border-radius: 10px;
+    background-color: var(--background-color);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.369);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.service-box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    background-color: #f4e6f5;
+}
+
+.service-container {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-container:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.service-content h3 {
+    font-size: 1.6em;
+    margin-bottom: 15px;
+    color: var(--primary-color);
+}
+
+/* Layanan Poin */
+.service-points li {
+    margin-bottom: 8px;
+    font-size: 1.2rem;
+    color: #555;
+    cursor: pointer;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.service-points li:hover {
+    color: var(--primary-color);
+    transform: translateX(5px);
+}
+
+.service-points li a {
+    text-decoration: none;
+    color: inherit;
+    transition: color 0.3s ease;
+}
+
+.service-points li a:hover {
+    color: var(--hover-color);
+    text-decoration: underline;
+}
+
+/* Dokter dan Lokasi */
+.doctor-card,
+.card {
+    border: 0.5px solid #ddd;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.61);
+}
+
+.doctor-card:hover,
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.188);
+}
+
+.card-title {
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+/* Testimonials */
+.testimonials-container {
+    position: relative;
+    margin: 2rem auto;
+    padding: 1rem;
+}
+
+.testimonials-wrapper {
+    display: flex;
+    gap: 1rem;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+}
+
+.testimonial {
+    flex: 0 0 calc(20% - 1rem);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 1rem;
+    background-color: #fff;
+    text-align: center;
+}
+
+.testimonial-photo {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 0.5rem;
+}
+
+.testimonial-name {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 0.3rem;
+}
+
+.testimonial-content {
+    font-style: italic;
+    color: #666;
+    margin: 0.5rem 0;
+}
+
+.testimonial-rating {
+    color: #f5b301;
+    font-size: 1.2rem;
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    color: #fff;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+.hero-section {
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.fade-in {
+    animation: fadeIn 1s ease-in-out;
+}
