@@ -255,7 +255,7 @@
 /* Efek hover untuk tautan */
 .service-points li a:hover {
   color: #c03192; /* Warna saat hover */
-  text-decoration: underline; /* Garis bawah saat hover */
+  /* text-decoration: underline; /* Garis bawah saat hover */
 }
 
 
@@ -264,6 +264,7 @@
   width: 70%;
   height: auto;
   object-fit: cover;
+  margin-left: 2.5rem; /* Memberi jarak ke kiri untuk gambar */
 }
 
 /* Responsif */
