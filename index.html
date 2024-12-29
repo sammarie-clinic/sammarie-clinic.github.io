@@ -484,6 +484,9 @@
 
               <button type="submit" class="submit">Kirim</button>
             </form>
+            <p class="success-message" id="successMessage">
+              Form berhasil dikirim!
+            </p>
           </div>
         </div>
       </div>
@@ -635,6 +638,28 @@ Alergi Obat: ${allergy} ${allergy === "Iya" ? `(${allergyDetails})` : ""}
             message
           )}`;
           window.open(whatsappURL, "_blank");
+        });
+
+      document
+        .getElementById("bookingForm")
+        .addEventListener("submit", function (event) {
+          event.preventDefault(); // Mencegah reload halaman
+
+          // Tampilkan pesan sukses
+          const successMessage = document.getElementById("successMessage");
+          successMessage.style.display = "block";
+
+          // Sembunyikan modal setelah beberapa detik
+          setTimeout(() => {
+            const modal = bootstrap.Modal.getInstance(
+              document.getElementById("registrationModal")
+            );
+            modal.hide();
+
+            // Reset form setelah modal ditutup
+            document.getElementById("bookingForm").reset();
+            successMessage.style.display = "none";
+          }, 2000);
         });
     </script>
 

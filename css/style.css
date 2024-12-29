@@ -600,7 +600,13 @@ button.btn-primary {
 .btn-close {
   font-size: 1.2rem;
 }
-
+.success-message {
+  display: none;
+  color: green;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 10px;
+}
 
 
   /* Terapkan animasi pada elemen */
