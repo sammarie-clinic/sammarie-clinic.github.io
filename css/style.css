@@ -641,6 +641,56 @@ button.btn-primary {
   margin-top: 10px;
 }
 
+/*CSS SITEMAP FOOTER */
+.footer {
+  background-color: #91298d; /* Warna utama */
+  color: #ffffff;
+}
+
+.footer a {
+  text-decoration: none;
+  color: #c03192; /* Warna aksen */
+  transition: color 0.3s ease;
+}
+
+.footer a:hover {
+  color: #ffffff;
+}
+
+.footer h5 {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  color: #ffffff;
+}
+
+.footer ul {
+  padding-left: 0;
+}
+
+.footer ul li {
+  margin-bottom: 0.5rem;
+}
+
+.footer p {
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+}
+
+.footer img {
+  max-width: 250px;
+}
+
+.footer hr {
+  border-top: 1px solid #ffffff;
+}
+
+.footer .text-light {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.footer .text-light:hover {
+  color: #ffffff;
+}
 
   /* Terapkan animasi pada elemen */
 .hero-section {
