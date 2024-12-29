@@ -544,6 +544,64 @@ iframe {
   color: #c03192;
 }
 
+/*css daftar online */
+.registration-section {
+  background-color: #f0f0f0; /* Warna latar belakang awal */
+  padding: 50px 0;
+}
+
+.registration-section:hover {
+  background-color: #e0e0e0; /* Warna latar belakang saat hover */
+}
+
+.container {
+  width: 100%; /* Membuat container fullwidth */
+}
+
+/*css form pop up */
+.button-container {
+  display: flex;
+  gap: 1rem;
+}
+.modal-header {
+  border-bottom: none;
+}
+.modal-footer {
+  border-top: none;
+}
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+input, select, textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+button.submit {
+  background-color: #91298d;
+  color: white;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  width: 100%;
+}
+button.submit:hover {
+  background-color: #c03192;
+}
+button.btn-primary {
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+}
+.btn-close {
+  font-size: 1.2rem;
+}
+
+
 
   /* Terapkan animasi pada elemen */
 .hero-section {

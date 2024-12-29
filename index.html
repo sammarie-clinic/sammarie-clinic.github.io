@@ -330,6 +330,314 @@
       </div>
     </section>
 
+    <!-- daftar online -->
+    <section class="registration-section">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-6">
+            <img
+              src="assets/images/daftar-online.png"
+              alt="Pendaftaran Online"
+              class="img-fluid"
+            />
+          </div>
+          <div class="col-md-6">
+            <h2>Pendaftaran Online Sammarie Clinic</h2>
+            <p>
+              Daftar sekarang dan nikmati kemudahan membuat janji temu tanpa
+              antri.
+            </p>
+            <p>
+              Cek jadwal dokter dahulu sebelum memilih dokter untuk memastikan
+              dokter yang tersedia
+            </p>
+            <div class="button-container">
+              <button
+                class="btn btn-primary"
+                data-bs-toggle="modal"
+                data-bs-target="#registrationModal"
+              >
+                Daftar Sekarang
+              </button>
+              <a href="jd.html" class="btn btn-primary btn-sm">Jadwal Dokter</a>
+            </div>
+            <style>
+              .button-container {
+                display: flex;
+                gap: 3rem;
+              }
+            </style>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div
+      class="modal fade"
+      id="registrationModal"
+      tabindex="-1"
+      aria-labelledby="registrationModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="registrationModalLabel">
+              Form Daftar Online
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form id="bookingForm">
+              <label for="branch">Cabang Klinik:</label>
+              <select id="branch" name="branch" required>
+                <option value="">-- Pilih Cabang Klinik --</option>
+                <option value="tebet">SamMarie Clinic Tebet</option>
+                <option value="bassura">SamMarie Clinic Bassura</option>
+              </select>
+
+              <label for="name">Nama Lengkap:</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Masukkan nama Anda"
+                required
+              />
+
+              <label for="birthdate">Tanggal Lahir:</label>
+              <input type="date" id="birthdate" name="birthdate" required />
+
+              <label for="gender">Jenis Kelamin:</label>
+              <select id="gender" name="gender" required>
+                <option value="">-- Pilih Jenis Kelamin --</option>
+                <option value="Laki-laki">Laki-laki</option>
+                <option value="Perempuan">Perempuan</option>
+              </select>
+
+              <label for="phone">Nomor WhatsApp:</label>
+              <input
+                type="tel"
+                id="phone"
+                name="phone"
+                placeholder="Masukkan nomor WhatsApp Anda"
+                required
+              />
+
+              <label for="clinic">Poliklinik:</label>
+              <select id="clinic" name="clinic" required>
+                <option value="">-- Pilih Poliklinik --</option>
+                <option value="umum">Umum</option>
+                <option value="kulit_kelamin">Kulit dan Kelamin</option>
+                <option value="anak">Anak</option>
+              </select>
+
+              <label for="doctor">Dokter:</label>
+              <select id="doctor" name="doctor" required>
+                <option value="">-- Pilih Dokter --</option>
+              </select>
+              <p class="note" id="scheduleNote"></p>
+
+              <label for="appointmentDate">Tanggal Perjanjian:</label>
+              <input
+                type="date"
+                id="appointmentDate"
+                name="appointmentDate"
+                required
+              />
+
+              <label for="insurance">Menggunakan Asuransi?</label>
+              <select id="insurance" name="insurance" required>
+                <option value="Tidak">Tidak</option>
+                <option value="Iya">Iya</option>
+              </select>
+
+              <label for="complaint">Keluhan yang Dirasakan:</label>
+              <textarea
+                id="complaint"
+                name="complaint"
+                rows="3"
+                placeholder="Tuliskan keluhan Anda"
+                required
+              ></textarea>
+
+              <label for="allergy">Apakah Anda Memiliki Alergi Obat?</label>
+              <select id="allergy" name="allergy" required>
+                <option value="Tidak">Tidak</option>
+                <option value="Iya">Iya</option>
+              </select>
+
+              <div id="allergyDetailsContainer" style="display: none">
+                <label for="allergyDetails">Jenis Alergi Obat:</label>
+                <input
+                  type="text"
+                  id="allergyDetails"
+                  name="allergyDetails"
+                  placeholder="Tuliskan jenis alergi obat Anda"
+                />
+              </div>
+
+              <button type="submit" class="submit">Kirim</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--javascript untuk pop up daftar online-->
+    <script>
+      const doctors = {
+        umum: [
+          {
+            name: "dr. Yudi Reza Phallaphi",
+            schedule: "Senin & Selasa, 13.00 - 20.00",
+          },
+          {
+            name: "dr. Karimah Nasar",
+            schedule: "Rabu & Kamis, 13.00 - 20.00",
+          },
+          {
+            name: "dr. Diyah Ayu Rosalinda",
+            schedule: "Jumat & Sabtu, 13.00 - 20.00",
+          },
+        ],
+        kulit_kelamin: [
+          {
+            name: "dr. Euis Mutmainah, Sp.DVE, FINSDV, FAADV",
+            schedule:
+              "Senin, Rabu, Kamis, & Sabtu, 16.30 - 18.00 (OL) | Selasa & Jumat, 16.00 - 17.00 ",
+          },
+          {
+            name: "dr. Indria Intan, Sp.DVE",
+            schedule: "Kamis, 13.00 - 15.00 | Sabtu, 11.00 - 13.00",
+          },
+        ],
+        anak: [
+          {
+            name: "dr. Gendis Ayu Ardias, Sp.A",
+            schedule:
+              "Senin, 16.00 - 19.00 | Rabu, 14.00 - 19.00 | Sabtu, 13.00 - 15.00",
+          },
+          {
+            name: "dr. Shofa Nisrina Luthfiyani, Sp.A",
+            schedule: "Selasa, 13.00 - 15.00 | Kamis, 16.00 - 19.00",
+          },
+        ],
+      };
+
+      const branchWhatsAppNumbers = {
+        tebet: "6281234567890", // Ganti dengan nomor WhatsApp cabang Tebet
+        bassura: "6289876543210", // Ganti dengan nomor WhatsApp cabang Bassura
+      };
+
+      const clinicSelect = document.getElementById("clinic");
+      const doctorSelect = document.getElementById("doctor");
+      const scheduleNote = document.getElementById("scheduleNote");
+      const allergySelect = document.getElementById("allergy");
+      const allergyDetailsContainer = document.getElementById(
+        "allergyDetailsContainer"
+      );
+      const allergyDetailsInput = document.getElementById("allergyDetails");
+
+      clinicSelect.addEventListener("change", () => {
+        const clinic = clinicSelect.value;
+        doctorSelect.innerHTML = '<option value="">-- Pilih Dokter --</option>';
+        scheduleNote.textContent = "";
+
+        if (clinic && doctors[clinic]) {
+          doctors[clinic].forEach((doctor) => {
+            const option = document.createElement("option");
+            option.value = doctor.name;
+            option.textContent = doctor.name;
+            doctorSelect.appendChild(option);
+          });
+        }
+      });
+
+      doctorSelect.addEventListener("change", () => {
+        const clinic = clinicSelect.value;
+        const doctor = doctorSelect.value;
+        const selectedDoctor = doctors[clinic]?.find((d) => d.name === doctor);
+        scheduleNote.textContent = selectedDoctor
+          ? `Jadwal: ${selectedDoctor.schedule}`
+          : "";
+      });
+
+      allergySelect.addEventListener("change", () => {
+        if (allergySelect.value === "Iya") {
+          allergyDetailsContainer.style.display = "block";
+          allergyDetailsInput.required = true;
+        } else {
+          allergyDetailsContainer.style.display = "none";
+          allergyDetailsInput.required = false;
+          allergyDetailsInput.value = "";
+        }
+      });
+
+      document
+        .getElementById("bookingForm")
+        .addEventListener("submit", function (event) {
+          event.preventDefault();
+
+          const branch = document.getElementById("branch").value;
+          const name = document.getElementById("name").value;
+          const birthdate = document.getElementById("birthdate").value;
+          const gender = document.getElementById("gender").value;
+          const phone = document.getElementById("phone").value;
+          const clinic = clinicSelect.value;
+          const doctor = doctorSelect.value;
+          const appointmentDate =
+            document.getElementById("appointmentDate").value;
+          const insurance = document.getElementById("insurance").value;
+          const complaint = document.getElementById("complaint").value;
+          const allergy = allergySelect.value;
+          const allergyDetails =
+            allergy === "Iya"
+              ? document.getElementById("allergyDetails").value
+              : "Tidak ada";
+
+          if (!branch) {
+            alert("Silakan pilih cabang klinik!");
+            return;
+          }
+
+          const whatsappNumber = branchWhatsAppNumbers[branch];
+          const message = `
+Halo, saya ingin mendaftar di ${
+            branch === "tebet"
+              ? "SamMarie Clinic Tebet"
+              : "SamMarie Clinic Bassura"
+          }.
+Nama: ${name}
+Tanggal Lahir: ${birthdate}
+Jenis Kelamin: ${gender}
+Nomor WhatsApp: ${phone}
+Poliklinik: ${
+            clinic === "umum"
+              ? "Umum"
+              : clinic === "kulit_kelamin"
+              ? "Kulit dan Kelamin"
+              : "Anak"
+          }
+Dokter: ${doctor}
+Tanggal Perjanjian: ${appointmentDate}
+Menggunakan Asuransi: ${insurance === "Iya" ? "Ya" : "Tidak"}
+Keluhan: ${complaint}
+Alergi Obat: ${allergy} ${allergy === "Iya" ? `(${allergyDetails})` : ""}
+      `.trim();
+
+          const whatsappURL = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(
+            message
+          )}`;
+          window.open(whatsappURL, "_blank");
+        });
+    </script>
+
     <!-- Lokasi Klinik Section -->
     <section class="container my-5">
       <div class="card-title text-start mb-4">
@@ -389,5 +697,6 @@
     <script src="js/jquery-3.4.1.slim.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/scripts.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
