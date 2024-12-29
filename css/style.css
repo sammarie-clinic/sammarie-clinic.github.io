@@ -544,6 +544,39 @@ iframe {
   color: #c03192;
 }
 
+/*css artikel homepage */
+.bg-light-gray {
+  background-color: #ecf0f3; /* Abu-abu terang */
+}
+
+
+.artikel-highlight .card-body {
+    padding: 20px; /* Memberi jarak pada semua sisi */
+    text-align: left; /* Teks rata kiri */
+  }
+
+
+.artikel-highlight .card {
+  border-radius: 12px;
+}
+
+.artikel-highlight .card-img-top {
+  height: 180px;
+  object-fit: cover;
+}
+
+.artikel-highlight .card-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.artikel-highlight .divider {
+  width: 100px;
+  height: 3px;
+  background-color: #007bff; /* Warna utama */
+  margin: 0 auto;
+}
+
 /*css daftar online */
 .registration-section {
   background-color: #f0f0f0; /* Warna latar belakang awal */
