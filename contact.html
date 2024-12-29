@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SamMarie Clinic</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="assets/images/favicon.png" type="image/png" />
+
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+    </style>
+
+    <!-- Meta Tags untuk SEO -->
+    <meta
+      name="description"
+      content="Klinik kesehatan di Jakarta dengan layanan kesehatan yang lengkap, dokter spesialis, dan perawatan profesional. Kesehatan Anda adalah prioritas kami!"
+    />
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="SamMarie Clinic" />
+    <meta
+      property="og:description"
+      content="Klinik kesehatan di Jakarta dengan layanan kesehatan yang lengkap, dokter spesialis, dan perawatan profesional. Kesehatan Anda adalah prioritas kami!"
+    />
+    <meta property="og:image" content="assets/images/layanan-anak.JPG" />
+    <meta property="og:url" content="https://sammarie-clinic.com/" />
+    <meta property="og:type" content="website" />
+
+    <!-- Bootstrap CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Font Awesome CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <!-- Scroll Up Button -->
+    <a href="#" class="scroll-up" id="scrollUp">
+      <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <!-- Header Section -->
+    <header class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container">
+        <!-- Logo Klinik -->
+        <a class="navbar-brand" href="index.html">
+          <img
+            src="assets/images/smc-logo.png"
+            alt="SamMarie Clinic"
+            class="logo"
+          />
+        </a>
+
+        <!-- Tombol untuk navigasi responsif -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Menu Navigasi -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link menu-hover" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link menu-hover" href="jd.html">Jadwal Dokter</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link menu-hover" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link menu-hover" href="#contact">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <header class="header">
+      <h1>Contact Us</h1>
+      <p>Select a location to see specific details for SamMarie Clinic.</p>
+    </header>
+
+    <section class="contact-container">
+      <!-- Pilihan Lokasi -->
+      <div class="location-selector">
+        <button class="location-btn" onclick="showLocation('tebet')">
+          Tebet
+        </button>
+        <button class="location-btn" onclick="showLocation('bassura')">
+          Bassura
+        </button>
+      </div>
+
+      <!-- Informasi Lokasi -->
+      <div id="location-details" class="location-details">
+        <h2 id="location-name">Tebet</h2>
+        <p id="location-address">
+          Address: Jl. Tebet Raya No.12, Tebet, South Jakarta
+        </p>
+        <p id="location-phone">
+          <i class="fas fa-phone"></i> Phone: +62 812 3456 7890
+        </p>
+        <p id="location-email">
+          <i class="fas fa-envelope"></i> Email: tebet@sammarieclinic.com
+        </p>
+
+        <h3>Operational Hours</h3>
+        <ul id="operational-hours">
+          <li>Monday - Friday: 8:00 AM - 8:00 PM</li>
+          <li>Saturday: 9:00 AM - 6:00 PM</li>
+          <li>Sunday: Closed</li>
+        </ul>
+
+        <h3>Our Location</h3>
+        <iframe
+          id="location-map"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3165.783019803656!2d-122.0842497!3d37.4220656!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fb6a2c45a0c3b%3A0x9f59db63ebd3aa!2sGoogleplex!5e0!3m2!1sen!2sus!4v1633002797128!5m2!1sen!2sus"
+          width="100%"
+          height="300"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+        ></iframe>
+      </div>
+    </section>
+
+    <script>
+      // Data lokasi untuk Tebet dan Bassura
+      const locations = {
+        tebet: {
+          name: "Tebet",
+          address: "Jl. Tebet Raya No.12, Tebet, South Jakarta",
+          phone: "+62 812 3456 7890",
+          email: "tebet@sammarieclinic.com",
+          hours: [
+            "Monday - Friday: 8:00 AM - 8:00 PM",
+            "Saturday: 9:00 AM - 6:00 PM",
+            "Sunday: Closed",
+          ],
+          map: "https://www.google.com/maps/embed?...", // Ganti dengan link peta Tebet
+        },
+        bassura: {
+          name: "Bassura",
+          address: "Bassura City Mall, Jl. Basuki Rahmat No.1, East Jakarta",
+          phone: "+62 812 9876 5432",
+          email: "bassura@sammarieclinic.com",
+          hours: [
+            "Monday - Friday: 9:00 AM - 9:00 PM",
+            "Saturday - Sunday: 10:00 AM - 7:00 PM",
+          ],
+          map: "https://www.google.com/maps/embed?...", // Ganti dengan link peta Bassura
+        },
+      };
+
+      // Fungsi untuk menampilkan detail lokasi
+      function showLocation(locationKey) {
+        const location = locations[locationKey];
+
+        // Update konten
+        document.getElementById("location-name").textContent = location.name;
+        document.getElementById(
+          "location-address"
+        ).textContent = `Address: ${location.address}`;
+        document.getElementById(
+          "location-phone"
+        ).innerHTML = `<i class="fas fa-phone"></i> Phone: ${location.phone}`;
+        document.getElementById(
+          "location-email"
+        ).innerHTML = `<i class="fas fa-envelope"></i> Email: ${location.email}`;
+
+        const hoursList = document.getElementById("operational-hours");
+        hoursList.innerHTML = "";
+        location.hours.forEach((hour) => {
+          const li = document.createElement("li");
+          li.textContent = hour;
+          hoursList.appendChild(li);
+        });
+
+        document.getElementById("location-map").src = location.map;
+      }
+    </script>
+
+    <!-- testimonial-->
+
+    <!-- footer sitemap -->
+    <footer class="footer text-white py-5">
+      <div class="container">
+        <div class="row">
+          <!-- Logo dan Artikel -->
+          <div class="col-md-4">
+            <img
+              src="assets/images/smc-logo-putih.png"
+              alt="Logo SamMarie Clinic"
+              class="img-fluid mb-3"
+            />
+            <p>
+              SamMarie Clinic hadir sebagai solusi bagi masyarakat yang mencari
+              layanan kesehatan berkualitas dekat rumah. Dengan pengalaman dari
+              SamMarie Healthcare Group, klinik ini menawarkan berbagai layanan
+              kesehatan primer yang komprehensif di lokasi strategis seperti
+              Bassura City dan Tebet.
+            </p>
+          </div>
+          <!-- Tentang Kami -->
+          <div class="col-md-2">
+            <h5>Tentang Kami</h5>
+            <ul class="list-unstyled">
+              <li><a href="#" class="text-light">Profil Klinik</a></li>
+              <li><a href="#" class="text-light">Visi & Misi</a></li>
+              <li><a href="#" class="text-light">Karir</a></li>
+            </ul>
+          </div>
+          <!-- Layanan -->
+          <div class="col-md-2">
+            <h5>Layanan</h5>
+            <ul class="list-unstyled">
+              <li><a href="#" class="text-light">Dokter Umum</a></li>
+              <li><a href="#" class="text-light">Spesialis Kulit</a></li>
+              <li><a href="#" class="text-light">Spesialis Anak</a></li>
+            </ul>
+          </div>
+          <!-- Kontak -->
+          <div class="col-md-2">
+            <h5>Kontak</h5>
+            <p>
+              <i class="fas fa-map-marker-alt"></i> Jl. Contoh Alamat No. 123,
+              Jakarta
+            </p>
+            <p>
+              <i class="fas fa-map-marker-alt"></i> Jl. Contoh Alamat No. 123,
+              Jakarta
+            </p>
+            <p><i class="fas fa-phone"></i> (021) 123-4567</p>
+            <p><i class="fas fa-envelope"></i> info@sammarie-clinic.com</p>
+          </div>
+          <!-- Media Sosial -->
+          <div class="col-md-2">
+            <h5>Media Sosial</h5>
+            <a href="#" class="text-light d-block"
+              ><i class="fab fa-facebook"></i> Facebook</a
+            >
+            <a href="#" class="text-light d-block"
+              ><i class="fab fa-instagram"></i> Instagram</a
+            >
+            <a href="#" class="text-light d-block"
+              ><i class="fab fa-twitter"></i> Twitter</a
+            >
+          </div>
+        </div>
+        <hr class="bg-light my-4" />
+        <p class="text-center mb-0">
+          &copy; 2024 SamMarie Clinic. All Rights Reserved.
+        </p>
+      </div>
+    </footer>
+
+    <!-- Footer Section 
+    <footer class="bg-dark text-white py-3 text-center">
+      <p>&copy; 2024 SamMarie Clinic | All Rights Reserved</p>
+    </footer>
+    -->
+
+    <!-- Scripts -->
+    <script src="js/jquery-3.4.1.slim.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/scripts.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

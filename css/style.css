@@ -692,6 +692,68 @@ button.btn-primary {
   color: #ffffff;
 }
 
+/* CSS Contact us */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+  color: #333333;
+}
+
+.header {
+  text-align: center;
+  padding: 40px 20px;
+  background-color: #91298d;
+  color: white;
+}
+
+.header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.contact-container {
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.location-selector {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.location-btn {
+  background-color: #91298d;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 0 10px;
+  transition: background-color 0.3s;
+}
+
+.location-btn:hover {
+  background-color: #c03192;
+}
+
+.location-details h2 {
+  color: #91298d;
+  margin-bottom: 10px;
+}
+
+.location-details ul {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0;
+}
+
+.location-details ul li {
+  margin-bottom: 8px;
+}
+
   /* Terapkan animasi pada elemen */
 .hero-section {
     animation: fadeIn 1.5s ease-in-out;
