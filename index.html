@@ -97,6 +97,27 @@
               <a class="nav-link menu-hover" href="contact.html">Contact Us</a>
             </li>
           </ul>
+          <!-- Tambahkan CTA Button -->
+          <a href="#registration-section" class="btn btn-primary btn-cta ml-3">
+            Daftar Online
+          </a>
+          <!--tambahan javascript untuk tampilan berada di tengah ketika di klik daftarn onlinenya-->
+          <script>
+            document
+              .querySelector(".btn-cta")
+              .addEventListener("click", function (e) {
+                e.preventDefault(); // Mencegah perilaku default link
+                const targetSection = document.querySelector(
+                  "#registration-section"
+                );
+
+                // Scroll ke elemen dengan posisi di tengah layar
+                targetSection.scrollIntoView({
+                  behavior: "smooth",
+                  block: "center", // Pastikan elemen berada di tengah layar
+                });
+              });
+          </script>
         </div>
       </div>
     </header>
@@ -343,7 +364,7 @@
     </section>
 
     <!-- daftar online -->
-    <section class="registration-section">
+    <section id="registration-section" class="registration-section">
       <div class="container">
         <div class="row align-items-center">
           <div class="col-md-6">

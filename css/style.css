@@ -46,6 +46,27 @@
   }
 }
 
+/*style CTA Navbar */
+.btn-cta {
+  background-color: #91298d;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: background-color 0.3s ease;
+}
+
+.btn-cta:hover {
+  background-color: #c03192;
+  text-decoration: none;
+}
+
+.navbar .ml-auto {
+  align-items: center;
+}
+
 /* Override warna default navigasi */
 .navbar-light .navbar-nav .nav-link {
   color: #575757 !important; /* Warna utama untuk menu */
