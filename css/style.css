@@ -66,6 +66,43 @@
 .navbar .ml-auto {
   align-items: center;
 }
+/* Sembunyikan tombol CTA di tampilan mobile */
+@media (max-width: 768px) {
+  .btn-cta {
+    display: none;
+  }
+}
+/* Tombol Ikon Pendaftaran (Hanya Mobile) */
+.btn-icon-registration {
+  display: none; /* Default tersembunyi untuk desktop */
+  font-size: 24px;
+  color: #91298d;
+  margin-left: auto; /* Agar berada di sebelah kanan logo */
+  margin-right: 15px;
+  text-decoration: none;
+}
+.btn-icon-registration {
+  padding: 5px; /* Tambahkan padding agar lebih proporsional */
+  border-radius: 50%; /* Opsional: Bisa berbentuk lingkaran */
+}
+
+.btn-icon-registration:hover {
+  color: #c03192;
+}
+
+/* Tampilkan ikon di tampilan mobile */
+@media (max-width: 992px) {
+  .btn-icon-registration {
+    display: inline-block;
+  }
+}
+
+/* Sembunyikan tombol CTA untuk tampilan mobile */
+@media (max-width: 992px) {
+  .btn-cta-mobile {
+    display: none;
+  }
+}
 
 /* Override warna default navigasi */
 .navbar-light .navbar-nav .nav-link {
