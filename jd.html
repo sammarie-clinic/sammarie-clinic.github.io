@@ -76,6 +76,17 @@
       </div>
     </header>
 
+    <div class="container mt-5 mb-4 text-center">
+      <label for="clinic-select" class="form-label fw-bold">
+        Pilih Cabang Klinik:
+      </label>
+      <br />
+      <select id="clinic-select" class="form-select w-auto d-inline-block">
+        <option value="bassura">Bassura</option>
+        <option value="tebet">Tebet</option>
+      </select>
+    </div>
+
     <main>
       <!-- Meet Our Doctors Section -->
       <section id="meet-our-doctors" class="py-5">
@@ -88,112 +99,118 @@
           </h1>
 
           <!-- Dokter Umum -->
-          <div class="mb-4">
-            <h4 class="text-muted">Dokter Umum</h4>
-            <div class="row gy-4">
-              <!-- Doctor 1 -->
-              <div class="col-md-4">
-                <div class="card shadow doctor-card text-center">
-                  <img
-                    src="assets/images/dr. Yudi Reza Phallaphi.jpg"
-                    class="card-img-top rounded-circle"
-                    alt="Doctor 1"
-                  />
-                  <div class="card-body">
-                    <h5 class="card-title">dr. Yudi Reza Phallaphi</h5>
-                    <p class="card-text">Dokter Umum</p>
+          <!-- === Bassura Section === -->
+          <div id="doctors-bassura" class="clinic-section">
+            <div class="mb-4">
+              <h4 class="text-muted">Dokter Umum</h4>
+              <div class="row gy-4">
+                <!-- Doctor 1 -->
+                <div class="col-6 col-md-4">
+                  <div class="card shadow doctor-card text-center">
+                    <img
+                      src="assets/images/dr. Yudi Reza Phallaphi.jpg"
+                      class="card-img-top rounded-circle"
+                      alt="Doctor 1"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">dr. Yudi Reza Phallaphi</h5>
+                      <p class="card-text">Dokter Umum</p>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <!-- Doctor 2 -->
-              <div class="col-md-4">
-                <div class="card shadow doctor-card text-center">
-                  <img
-                    src="assets/images/dr. Mutiara Ramadhanty.jpg"
-                    class="card-img-top rounded-circle"
-                    alt="Doctor 2"
-                  />
-                  <div class="card-body">
-                    <h5 class="card-title">dr. Mutiara Ramadhanty</h5>
-                    <p class="card-text">Dokter Umum</p>
+                <!-- Doctor 2 -->
+                <div class="col-6 col-md-4">
+                  <div class="card shadow doctor-card text-center">
+                    <img
+                      src="assets/images/dr. Mutiara Ramadhanty.jpg"
+                      class="card-img-top rounded-circle"
+                      alt="Doctor 2"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">dr. Mutiara Ramadhanty</h5>
+                      <p class="card-text">Dokter Umum</p>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <!-- Doctor 3 -->
-              <div class="col-md-4">
-                <div class="card shadow doctor-card text-center">
-                  <img
-                    src="assets/images/dr. Diyah Ayu Rosalinda.jpg"
-                    class="card-img-top rounded-circle"
-                    alt="Doctor 3"
-                  />
-                  <div class="card-body">
-                    <h5 class="card-title">dr. Diyah Ayu Rosalinda</h5>
-                    <p class="card-text">Dokter Umum</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="container"></div>
-          <!-- Dokter Spesialis Kulit dan Kelamin -->
-          <div class="mb-4">
-            <h4 class="text-muted">Dokter Spesialis Kulit dan Kelamin</h4>
-            <div class="row gy-4">
-              <!-- Doctor 1 -->
-              <div class="col-md-4">
-                <div class="card shadow doctor-card text-center">
-                  <img
-                    src="assets/images/dr. Euis Mutmainnah, Sp.DVE, FINSDV, FAADV.jpg"
-                    class="card-img-top rounded-circle"
-                    alt="Doctor 1"
-                  />
-                  <div class="card-body">
-                    <h5 class="card-title">
-                      dr. Euis Mutmainnah, Sp.DVE, FINSDV, FAADV
-                    </h5>
-                    <p class="card-text">Dokter Spesialis Kulit dan Kelamin</p>
-                  </div>
-                </div>
-              </div>
-              <!-- Doctor 2 -->
-              <div class="col-md-4">
-                <div class="card shadow doctor-card text-center">
-                  <img
-                    src="assets/images/dr. Indria Intan, Sp.DVE.jpg"
-                    class="card-img-top rounded-circle"
-                    alt="Doctor 2"
-                  />
-                  <div class="card-body">
-                    <h5 class="card-title">dr. Indria Intan, Sp.DVE</h5>
-                    <p class="card-text">Dokter Spesialis Kulit dan Kelamin</p>
+                <!-- Doctor 3 -->
+                <div class="col-6 col-md-4 mt-4">
+                  <div class="card shadow doctor-card text-center">
+                    <img
+                      src="assets/images/dr. Diyah Ayu Rosalinda.jpg"
+                      class="card-img-top rounded-circle"
+                      alt="Doctor 3"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">dr. Diyah Ayu Rosalinda</h5>
+                      <p class="card-text">Dokter Umum</p>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
 
-          <div class="container"></div>
-          <!-- Dokter Spesialis Anak -->
-          <div class="mb-4">
-            <h4 class="text-muted">Dokter Spesialis Anak</h4>
-            <div class="row gy-4">
-              <!-- Doctor 1 -->
-              <div class="col-md-4">
-                <div class="card shadow doctor-card text-center">
-                  <img
-                    src="assets/images/dr. Gendis Ayu Ardias, Sp.A.jpg"
-                    class="card-img-top rounded-circle"
-                    alt="Doctor 1"
-                  />
-                  <div class="card-body">
-                    <h5 class="card-title">dr. Gendis Ayu Ardias, Sp.A</h5>
-                    <p class="card-text">Dokter Spesialis Anak</p>
+            <div class="container"></div>
+            <!-- Dokter Spesialis Kulit dan Kelamin -->
+            <div class="mb-4">
+              <h4 class="text-muted">Dokter Spesialis Kulit dan Kelamin</h4>
+              <div class="row gy-4">
+                <!-- Doctor 1 -->
+                <div class="col-6 col-md-4">
+                  <div class="card shadow doctor-card text-center">
+                    <img
+                      src="assets/images/dr. Euis Mutmainnah, Sp.DVE, FINSDV, FAADV.jpg"
+                      class="card-img-top rounded-circle"
+                      alt="Doctor 1"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">
+                        dr. Euis Mutmainnah, Sp.DVE, FINSDV, FAADV
+                      </h5>
+                      <p class="card-text">
+                        Dokter Spesialis Kulit dan Kelamin
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <!-- Doctor 2 -->
+                <div class="col-6 col-md-4">
+                  <div class="card shadow doctor-card text-center">
+                    <img
+                      src="assets/images/dr. Indria Intan, Sp.DVE.jpg"
+                      class="card-img-top rounded-circle"
+                      alt="Doctor 2"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">dr. Indria Intan, Sp.DVE</h5>
+                      <p class="card-text">
+                        Dokter Spesialis Kulit dan Kelamin
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>
-              <!-- Doctor 2 matiin sementara
+            </div>
+
+            <div class="container"></div>
+            <!-- Dokter Spesialis Anak -->
+            <div class="mb-4">
+              <h4 class="text-muted">Dokter Spesialis Anak</h4>
+              <div class="row gy-4">
+                <!-- Doctor 1 -->
+                <div class="col-6 col-md-4">
+                  <div class="card shadow doctor-card text-center">
+                    <img
+                      src="assets/images/dr. Gendis Ayu Ardias, Sp.A.jpg"
+                      class="card-img-top rounded-circle"
+                      alt="Doctor 1"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">dr. Gendis Ayu Ardias, Sp.A</h5>
+                      <p class="card-text">Dokter Spesialis Anak</p>
+                    </div>
+                  </div>
+                </div>
+                <!-- Doctor 2 matiin sementara
               <div class="col-md-4">
                 <div class="card shadow doctor-card text-center">
                   <img
@@ -209,16 +226,277 @@
                   </div>
                 </div>
               </div> -->
+              </div>
+            </div>
+
+            <!-- Doctor Schedule -->
+            <section id="doctor-schedule" class="py-5">
+              <h2 class="text-center mb-4" style="color: #c03192">
+                Doctor's Schedule SamMarie Clinic Bassura City
+              </h2>
+              <div class="table-responsive">
+                <table
+                  class="table table-bordered text-center"
+                  style="white-space: nowrap"
+                >
+                  <thead>
+                    <tr style="background-color: #91298d; color: white">
+                      <th>Nama Dokter</th>
+                      <th>Senin</th>
+                      <th>Selasa</th>
+                      <th>Rabu</th>
+                      <th>Kamis</th>
+                      <th>Jum'at</th>
+                      <th>Sabtu</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <!-- Pemisah Dokter Umum -->
+                    <tr style="background-color: #f2f2f2; font-weight: bold">
+                      <td
+                        colspan="7"
+                        class="text-center"
+                        style="color: #91298d"
+                      >
+                        Dokter Umum
+                      </td>
+                    </tr>
+                    <tr>
+                      <td style="text-align: left">dr. Yudi Reza Phallaphi</td>
+                      <td>13.00 - 20.00</td>
+                      <td>13.00 - 20.00</td>
+                      <td>&nbsp;</td>
+                      <td>&nbsp;</td>
+                      <td>&nbsp;</td>
+                      <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                      <td style="text-align: left">dr. Mutiara Ramadhanty</td>
+                      <td>&nbsp;</td>
+                      <td>&nbsp;</td>
+                      <td>13.00 - 20.00</td>
+                      <td>13.00 - 20.00</td>
+                      <td>&nbsp;</td>
+                      <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                      <td style="text-align: left">dr. Diyah Ayu Rosalinda</td>
+                      <td>&nbsp;</td>
+                      <td>&nbsp;</td>
+                      <td>&nbsp;</td>
+                      <td>&nbsp;</td>
+                      <td>13.00 - 20.00</td>
+                      <td>13.00 - 20.00</td>
+                    </tr>
+                    <!-- Pemisah Dokter Spesialis Kulit -->
+                    <tr style="background-color: #f2f2f2; font-weight: bold">
+                      <td
+                        colspan="7"
+                        class="text-center"
+                        style="color: #91298d"
+                      >
+                        Dokter Spesialis Kulit dan Kelamin
+                      </td>
+                    </tr>
+                    <tr>
+                      <td style="text-align: left">
+                        dr. Euis Mutmainnah, Sp.DVE,<br />
+                        FINSDV, FAADV
+                      </td>
+                      <td>16.30 - 18.00 (OL)</td>
+                      <td>16.00 - 17.00</td>
+                      <td>16.30 - 18.00 (OL)</td>
+                      <td>16.30 - 18.00 (OL)</td>
+                      <td>16.00 - 17.00</td>
+                      <td>13.00 - 15.00 (OL)</td>
+                    </tr>
+                    <tr>
+                      <td style="text-align: left">dr. Indria Intan, Sp.DVE</td>
+                      <td>&nbsp;</td>
+                      <td>&nbsp;</td>
+                      <td>&nbsp;</td>
+                      <td>13.00 - 15.00</td>
+                      <td>&nbsp;</td>
+                      <td>10.30 - 12.30</td>
+                    </tr>
+                    <!-- Pemisah Dokter Spesialis Anak -->
+                    <tr style="background-color: #f2f2f2; font-weight: bold">
+                      <td
+                        colspan="7"
+                        class="text-center"
+                        style="color: #91298d"
+                      >
+                        Dokter Spesialis Anak
+                      </td>
+                    </tr>
+                    <tr>
+                      <td style="text-align: left">
+                        dr. Gendis Ayu Ardias, Sp.A
+                      </td>
+                      <td>16.00 - 20.00</td>
+                      <td>&nbsp;</td>
+                      <td>14.00 - 20.00</td>
+                      <td>&nbsp;</td>
+                      <td>&nbsp;</td>
+                      <td>13.00 - 15.00</td>
+                    </tr>
+                    <!--<tr>
+                    <td style="text-align: left">
+                      dr. Shofa Nisrina Luthfiyani, Sp.A
+                    </td>
+                    <td>&nbsp;</td>
+                    <td>13.00 - 15.00</td>
+                    <td>&nbsp;</td>
+                    <td>16.00 - 19.00</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                  </tr> -->
+                  </tbody>
+                </table>
+              </div>
+            </section>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Meet Our Doctors Section Tebet-->
+    <main>
+      <div class="container">
+        <!-- Dokter Umum -->
+        <div id="doctors-tebet" class="clinic-section" style="display: none">
+          <div class="mb-4">
+            <h4 class="text-muted">Dokter Umum</h4>
+            <div class="row gy-4">
+              <!-- Doctor 1 -->
+              <div class="col-6 col-md-4">
+                <div class="card shadow doctor-card text-center">
+                  <img
+                    src="assets/images/dr. Yudi Reza Phallaphi.jpg"
+                    class="card-img-top rounded-circle"
+                    alt="Doctor 1"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">dr. Yudi Reza Phallaphi</h5>
+                    <p class="card-text">Dokter Umum</p>
+                  </div>
+                </div>
+              </div>
+              <!-- Doctor 2 -->
+              <div class="col-6 col-md-4">
+                <div class="card shadow doctor-card text-center">
+                  <img
+                    src="assets/images/dr. Yasmine Ayu Dwinastiti.jpg"
+                    class="card-img-top rounded-circle"
+                    alt="Doctor 2"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">dr. Yasmine Ayu Dwinastiti</h5>
+                    <p class="card-text">Dokter Umum</p>
+                  </div>
+                </div>
+              </div>
+              <!-- Doctor 3 -->
+              <div class="col-6 col-md-4 mt-4">
+                <div class="card shadow doctor-card text-center">
+                  <img
+                    src="assets/images/"
+                    class="card-img-top rounded-circle"
+                    alt="Doctor 3"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">dr. Kemal Akbar Suryoadji</h5>
+                    <p class="card-text">Dokter Umum</p>
+                  </div>
+                </div>
+              </div>
+              <!-- Doctor 4 -->
+              <div class="col-6 col-md-4 mt-4">
+                <div class="card shadow doctor-card text-center">
+                  <img
+                    src="assets/images/dr. Shaqina Said.jpg"
+                    class="card-img-top rounded-circle"
+                    alt="Doctor 4"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">dr. Shaqina Said</h5>
+                    <p class="card-text">Dokter Umum</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="container"></div>
+          <!-- Dokter Spesialis Kulit dan Kelamin -->
+          <div class="mb-4">
+            <h4 class="text-muted">Dokter Spesialis Kulit dan Kelamin</h4>
+            <div class="row gy-4">
+              <!-- Doctor 1 -->
+              <div class="col-6 col-md-4">
+                <div class="card shadow doctor-card text-center">
+                  <img
+                    src="assets/images/Dr. dr. Tjut Nurul Alam, Sp.DVE(K).jpg"
+                    class="card-img-top rounded-circle"
+                    alt="Doctor 1"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">
+                      Dr. dr. Tjut Nurul Alam, Sp.DVE(K)
+                    </h5>
+                    <p class="card-text">Dokter Spesialis Kulit dan Kelamin</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="container"></div>
+          <!-- Dokter Spesialis Anak -->
+          <div class="mb-4">
+            <h4 class="text-muted">Dokter Spesialis Anak</h4>
+            <div class="row gy-4">
+              <!-- Doctor 1 -->
+              <div class="col-6 col-md-4">
+                <div class="card shadow doctor-card text-center">
+                  <img
+                    src="assets/images/dr. Nadia Qoriah Firdausy, Sp.A.jpg"
+                    class="card-img-top rounded-circle"
+                    alt="Doctor 1"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">dr. Nadia Qoriah Firdausy, Sp.A</h5>
+                    <p class="card-text">Dokter Spesialis Anak</p>
+                  </div>
+                </div>
+              </div>
+              <!-- Doctor 2 -->
+              <div class="col-6 col-md-4">
+                <div class="card shadow doctor-card text-center">
+                  <img
+                    src="assets/images/"
+                    class="card-img-top rounded-circle"
+                    alt="Doctor 2"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">dr. M. Yusra Firdaus, Sp.A</h5>
+                    <p class="card-text">Dokter Spesialis Anak</p>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
 
           <!-- Doctor Schedule -->
           <section id="doctor-schedule" class="py-5">
             <h2 class="text-center mb-4" style="color: #c03192">
-              Doctor's Schedule
+              Doctor's Schedule SamMarie Clinic Tebet
             </h2>
             <div class="table-responsive">
-              <table class="table table-bordered text-center">
+              <table
+                class="table table-bordered text-center"
+                style="white-space: nowrap"
+              >
                 <thead>
                   <tr style="background-color: #91298d; color: white">
                     <th>Nama Dokter</th>
@@ -238,31 +516,40 @@
                     </td>
                   </tr>
                   <tr>
+                    <td style="text-align: left">dr. Yasmine Ayu Dwinastiti</td>
+                    <td>13.00 - 20.00</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                  </tr>
+                  <tr>
+                    <td style="text-align: left">dr. Kemal Akbar Suryoadji</td>
+                    <td>&nbsp;</td>
+                    <td>13.00 - 20.00</td>
+                    <td>&nbsp;</td>
+                    <td>13.00 - 20.00</td>
+                    <td>13.00 - 20.00</td>
+                    <td>&nbsp;</td>
+                  </tr>
+                  <tr>
                     <td style="text-align: left">dr. Yudi Reza Phallaphi</td>
-                    <td>13.00 - 20.00</td>
-                    <td>13.00 - 20.00</td>
                     <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>13.00 - 20.00</td>
                     <td>&nbsp;</td>
                     <td>&nbsp;</td>
                     <td>&nbsp;</td>
                   </tr>
                   <tr>
-                    <td style="text-align: left">dr. Mutiara Ramadhanty</td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                    <td>13.00 - 20.00</td>
-                    <td>13.00 - 20.00</td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                  </tr>
-                  <tr>
-                    <td style="text-align: left">dr. Diyah Ayu Rosalinda</td>
+                    <td style="text-align: left">dr. Shaqina Said</td>
                     <td>&nbsp;</td>
                     <td>&nbsp;</td>
                     <td>&nbsp;</td>
                     <td>&nbsp;</td>
-                    <td>13.00 - 20.00</td>
-                    <td>13.00 - 20.00</td>
+                    <td>&nbsp;</td>
+                    <td>10.00 - 15.00</td>
                   </tr>
                   <!-- Pemisah Dokter Spesialis Kulit -->
                   <tr style="background-color: #f2f2f2; font-weight: bold">
@@ -272,24 +559,14 @@
                   </tr>
                   <tr>
                     <td style="text-align: left">
-                      dr. Euis Mutmainnah, Sp.DVE,<br />
-                      FINSDV, FAADV
+                      Dr. dr. Tjut Nurul Alam, Sp.DVE(K)
                     </td>
-                    <td>16.30 - 18.00 (OL)</td>
-                    <td>16.00 - 17.00</td>
-                    <td>16.30 - 18.00 (OL)</td>
-                    <td>16.30 - 18.00 (OL)</td>
-                    <td>16.00 - 17.00</td>
-                    <td>13.00 - 15.00 (OL)</td>
-                  </tr>
-                  <tr>
-                    <td style="text-align: left">dr. Indria Intan, Sp.DVE</td>
+                    <td>14.00 - 15.00</td>
                     <td>&nbsp;</td>
                     <td>&nbsp;</td>
                     <td>&nbsp;</td>
-                    <td>13.00 - 15.00</td>
                     <td>&nbsp;</td>
-                    <td>10.30 - 12.30</td>
+                    <td>10.00 - 12.00</td>
                   </tr>
                   <!-- Pemisah Dokter Spesialis Anak -->
                   <tr style="background-color: #f2f2f2; font-weight: bold">
@@ -299,32 +576,30 @@
                   </tr>
                   <tr>
                     <td style="text-align: left">
-                      dr. Gendis Ayu Ardias, Sp.A
+                      dr. Nadia Qoriah Firdausy, Sp.A
                     </td>
-                    <td>16.00 - 20.00</td>
-                    <td>&nbsp;</td>
-                    <td>14.00 - 20.00</td>
-                    <td>&nbsp;</td>
                     <td>&nbsp;</td>
                     <td>13.00 - 15.00</td>
+                    <td>13.00 - 15.00</td>
+                    <td>13.00 - 15.00</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
                   </tr>
-                  <!--<tr>
-                    <td style="text-align: left">
-                      dr. Shofa Nisrina Luthfiyani, Sp.A
-                    </td>
+                  <tr>
+                    <td style="text-align: left">dr. M. Yusra Firdaus, Sp.A</td>
+                    <td>17.00 - 20.00</td>
                     <td>&nbsp;</td>
-                    <td>13.00 - 15.00</td>
+                    <td>17.00 - 20.00</td>
                     <td>&nbsp;</td>
-                    <td>16.00 - 19.00</td>
+                    <td>17.00 - 20.00</td>
                     <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                  </tr> -->
+                  </tr>
                 </tbody>
               </table>
             </div>
           </section>
         </div>
-      </section>
+      </div>
     </main>
 
     <!-- FAQ -->

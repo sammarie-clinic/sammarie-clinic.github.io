@@ -94,4 +94,19 @@ document.querySelectorAll('.faq-question').forEach(question => {
       header.style.backgroundColor = 'transparent';
     }
   }
+
+  // JS Jadwal
+  
+  const clinicSelect = document.getElementById('clinic-select');
+  const sections = document.querySelectorAll('.clinic-section');
+
+  clinicSelect.addEventListener('change', () => {
+    const selected = clinicSelect.value;
+    
+    sections.forEach(section => {
+      section.style.display = section.id === 'doctors-' + selected ? 'block' : 'none';
+    });
+  });
+
+
   

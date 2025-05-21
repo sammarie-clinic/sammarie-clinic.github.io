@@ -355,8 +355,8 @@
   overflow: hidden;
   border-radius: 50%;
   margin: 1rem auto;
-  width: 150px;
-  height: 150px;
+  width: 100px;
+  height: 100px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -380,6 +380,33 @@
   color: #6c757d;
   margin-bottom: 1rem;
 }
+
+@media (max-width: 576px) {
+  .doctor-card {
+    max-width: 100%;  /* full-width di HP */
+  }
+  .card-img-wrapper {
+    width: 100px;
+    height: 100px;
+    margin: 0.5rem auto;
+  }
+}
+/* Responsive text & spacing for doctor cards */
+@media (max-width: 576px) {
+  .doctor-card .card-title {
+    font-size: 1rem;
+  }
+
+  .doctor-card .card-text {
+    font-size: 0.9rem;
+  }
+
+  .doctor-card .card-body {
+    padding: 0.75rem;
+  }
+}
+
+
 
 /*untuk css card lokasi klinik */ 
 .card {
