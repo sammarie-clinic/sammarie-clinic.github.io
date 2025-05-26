@@ -777,6 +777,10 @@ button.btn-primary {
   color: #ffffff;
 }
 
+.justify-text {
+  text-align: justify;
+}
+
 /* CSS Contact us */
 body {
   font-family: Arial, sans-serif;
