@@ -451,7 +451,7 @@
 
 /* Tambahan opsional: ratakan card di tengah container */
 .clinic-section .row {
-  justify-content: start;
+  justify-content: center;
 }
 
 
