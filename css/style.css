@@ -406,6 +406,54 @@
   }
 }
 
+/* Tambahan spacing antar card biar rapi */
+.row.gy-4 {
+  row-gap: 2rem; /* jarak vertikal antarbaris */
+  column-gap: 1.5rem; /* jarak horizontal antarkolom */
+}
+
+/* Pastikan setiap card punya margin bawah halus */
+.doctor-card {
+  margin-bottom: 20px;
+}
+
+/* Supaya tampilan grid responsif rapi di layar kecil */
+@media (max-width: 768px) {
+  .row.gy-4 {
+    row-gap: 1.5rem;
+    column-gap: 1rem;
+  }
+}
+
+/* Tambahan opsional: ratakan card di tengah container */
+.clinic-section .row {
+  justify-content: start;
+}
+
+/* Tambahan spacing antar card biar rapi */
+.row.gy-4 {
+  row-gap: 2rem; /* jarak vertikal antarbaris */
+  column-gap: 1.5rem; /* jarak horizontal antarkolom */
+}
+
+/* Pastikan setiap card punya margin bawah halus */
+.doctor-card {
+  margin-bottom: 20px;
+}
+
+/* Supaya tampilan grid responsif rapi di layar kecil */
+@media (max-width: 768px) {
+  .row.gy-4 {
+    row-gap: 1.5rem;
+    column-gap: 1rem;
+  }
+}
+
+/* Tambahan opsional: ratakan card di tengah container */
+.clinic-section .row {
+  justify-content: start;
+}
+
 
 
 /*untuk css card lokasi klinik */ 
